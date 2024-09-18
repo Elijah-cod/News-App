@@ -1,9 +1,9 @@
 const Navbar = () => {
     return (
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            Navbar
+            <span class="badge bg-light text-dark fs4">NewsMag</span>
           </a>
           <button
             class="navbar-toggler"
