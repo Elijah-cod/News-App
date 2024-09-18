@@ -1,3 +1,4 @@
+
 const NewsItem = ({title, description, src, url}) => {
     return (
       src && description ? (

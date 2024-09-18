@@ -1,9 +1,9 @@
-const Navbar = () => {
+const Navbar = ({setCategory}) => {
     return (
       <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <span class="badge bg-light text-dark fs4">NewsMag</span>
+            <span class="badge bg-light text-dark fs4" onClick={()=>setCategory("general")}>NewsMag</span>
           </a>
           <button
             class="navbar-toggler"
@@ -19,24 +19,34 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+                <div class="nav-link" onClick={()=>setCategory("technology")}>
+                  Technology
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
+                <div class="nav-link" onClick={()=>setCategory("business")}>
+                  Business
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
+                <div class="nav-link" onClick={()=>setCategory("health")}>
+                  Health
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">
-                  Disabled
-                </a>
+                <div class="nav-link" onClick={()=>setCategory("science")}>
+                  Science
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link" onClick={()=>setCategory("sports")}>
+                  Sports
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link" onClick={()=>setCategory("entertainment")}>
+                  Entertainment
+                </div>
               </li>
             </ul>
           </div>
