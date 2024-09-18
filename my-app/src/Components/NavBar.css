@@ -1,0 +1,7 @@
+.navbar:hover {
+    cursor: pointer;
+}
+
+.navbar .nav-link:hover{
+    letter-spacing: 3px;
+}

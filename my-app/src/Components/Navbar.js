@@ -1,3 +1,4 @@
+import './NavBar.css';
 const Navbar = ({setCategory}) => {
     return (
       <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
